@@ -1,10 +1,12 @@
 @import "./global/global.css";
 @import "./global/header.css";
-
+@import "./global/rodape.css";
 
 /*HOME*/
 @import "./home/introducao.css";
 @import "./home/tecnologias.css";
+@import "./home/parceiros.css";
+@import "./home/depoimento.css";
 
 /*UTILIDADES*/
 @import "./utilidades/componentes.css";
@@ -13,3 +15,7 @@
 
 /*BICICLETAS*/
 @import "./bicicletas/bicicletas-lista.css";
+
+/*SEGUROS*/
+@import "./seguros/seguros.css";
+
