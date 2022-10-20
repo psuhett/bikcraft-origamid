@@ -1,7 +1,8 @@
 .container {
     box-sizing: border-box;
     max-width: 1200px;
-    padding: 0px 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -20,6 +21,22 @@
 
 .btn:hover {
     background: linear-gradient(#ffb60d, #e59317);
+}
+.btn.seta{
+    display: flex;
+    align-items: center;
+}
+.btn.seta::after{
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 10px;
+    margin-left: 12px;
+    background: url(../../img/icones/seta.svg);
+    transition: transform 0.2s;
+}
+.btn.seta:hover::after{
+    transform: translateX(4px);
 }
 
 .btn.secundario {
@@ -55,4 +72,27 @@
 
 .link:hover {
     color: var(--cor-0);
+}
+
+/*titulos internos*/
+
+.titulo-bg{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--cor-11);
+}
+.titulo p{
+    margin-bottom: 4px;
+}
+
+@media screen and (max-width:800px){
+    .titulo-bg{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .titulo p{
+        font-size: 1rem;
+        text-transform: lowercase;
+        font-weight: 400;
+    }
 }

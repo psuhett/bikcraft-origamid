@@ -1,0 +1,11 @@
+#contato{
+    background-color: var(--cor-1);
+}
+.contato{
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+}
+.contato-dados,
+.contato-formulario{
+    
+}
